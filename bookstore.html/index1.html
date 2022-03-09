@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- the title that appears on page tab
+    followed by the links connceted to this page -->
+    <title>Book Classifications</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javaScript.js"></script>
+
+
+
+
+</head>
+<!-- this is the top part of page where the header is 
+    it will show the logo search and buy logos-->
+
+<body>
+    <a href="index2.html"><img class="icon" src="img/carticon.jpg" alt="" /> </a>
+    <img src="img/searchicon.png" class="search" alt="search icon">
+    <img class="logo" src="img/logo.png" alt="logo for Treasure BookStore">
+    <header>
+        <h2>Treasure BookStore </h2>
+    </header>
+
+    <div>
+        <nav>
+            <div id="main">
+                <!--this is tab it will choose what catagory the user wants the chosen
+                     catagory will be chosen by class and function-->
+                <!--the nav is here it will choose based on each button and it
+                 has refrence to html pages that it will lead to -->
+                <div class="black">
+                    <button class="righty openbtn" onclick="openNav()"> ☰ </button>
+                    <button class="white pink" onclick="openBooks('BS')">Best Sells</button>
+                    <button class="white pink" onclick="openBooks('NA')">New Arrivals</button>
+                    <button class="white pink" onclick="openBooks('CF')">Critic Favorites</button>
+                </div>
+            </div>
+        </nav>
+        <!-- this is a list of books by rwons  and coloums based on class-->
+        <div id="BS" class="w3-container booked">
+            <h1> &nbsp; &nbsp; </h1>
+
+
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="img1" src="img/book.jpg" alt="">
+
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>Too Much and Never Enough<br><b>$24.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="img1" src="img/book2.jpg" alt="">
+
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>Girl Stop Apologizing<br><b>$19.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="img1" src="img/book1.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">New</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>The Silent Patient<br><b>$19.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="heightinc img1" src="img/book3.jpg" alt="">
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>Where The Crawdads Sing<br><b>$20.50</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="heightinc img1" src="img/book4.jpg" alt="">
+                        <p>Diary of an Awesome Friendly kid<br><b>$20.50</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="img1" src="img/book5.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">Sale</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>The Testaments<br><b class="w3-text-red">$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="img1" src="img/book6.jpg" alt="">
+                        <p>The Institute<br><b>$14.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="heightinc img1" src="img/book7.jpg" alt="">
+                        <p>GreenLights<br><b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="heightinc img1" src="img/book8.jpg" alt="">
+                        <p>The Sentinel<br><b>$24.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="img1" src="img/book9.jpg" alt="">
+                        <p>Caste:the origins of our discontents<br><b>$19.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="heightinc img1" src="img/book10.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">New</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>modern comfort food<br><b>$19.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="img1" src="img/book11.jpg" alt="">
+                        <p>The evening and the morning<br><b>$20.50</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="heightinc img1" src="img/book12.jpg" alt="">
+                        <p>The Searcher A NOVEL<br><b>$20.50</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="img1" src="img/book13.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">Sale</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>Midnight sun<br><b class="w3-text-red">$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="heightinc img1" src="img/book14.jpg" alt="">
+                        <p>To kill a mockingbird<br><b>$14.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="img1" src="img/book15.png" alt="">
+                        <p>The Handmaid's Tale<br><b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--this is the second part of books it will show a list of books -->
+
+        <div id="NA" class="w3-container booked">
+
+            <!--
+        <div class="imgcontainer">
+          <img class="container1" src="img/imgcontainer1.jpg">
+          <div class="wonimg"><h3>Enjoy newly released books <br> from your favortie authors and more </h3> </div>
+        </div> -->
+            <h1> &nbsp; &nbsp; </h1>
+
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book12.jpg" alt="">
+                        <p>The searcher <br><b>$24.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img src="img/book16.jpg" alt="">
+                        <p>the ballad of songbirds and snakes<br><b>$19.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="img/book17.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">New</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>THE VANISHING HALF<br><b>$19.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img src="img/book13.jpg" alt="">
+                        <p>midnight sun<br><b>$20.50</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book18.jpg" alt="">
+                        <p>the glass hotel<br><b>$20.50</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="img/book19.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">Sale</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>A Time For MERCY<br><b class="w3-text-red">$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book20.jpg" alt="">
+                        <p>Big summer<br><b>$14.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="heightinc" src="img/book21.jpg" alt="">
+                        <p>the book of two ways<br><b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book33.jpg" alt="">
+                        <p>must i go <br><b>$24.99</b></p><br>
+                    </div>
+                    <div class="w3-container">
+                        <img src="img/book34.jpg" alt="">
+                        <p>if i had your face<br><b>$19.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img class="heightinc" src="img/book35.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">New</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>PERFECT TUNES by EMILY GOULD<br><b>$19.99</b></p><br><br>
+                    </div>
+                    <div class="w3-container">
+                        <img class="heightinc" src="img/book36.jpg" alt="">
+                        <p>RODHAM<br><b>$20.50</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book37.jpg" alt="">
+                        <p>topics of convertaion <br><b>$20.50</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="img/book38.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">Sale</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>UNCANNY VALLEY by anna wiener<br><b class="w3-text-red">$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book39.jpg" alt="">
+                        <p>weather by jenny offill<br><b>$14.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="heightinc" src="img/24.jpg" alt="">
+                        <p>the cold millions by jess walter<br><b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--the last part of book listing -->
+
+        <div id="CF" class="w3-container booked">
+            <h1> &nbsp; &nbsp; </h1>
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book22.jpg" alt="">
+                        <p>Normal people<br><b>$24.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img src="img/book23.jpg" alt="">
+                        <p>Women Talking<br><b>$19.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="img/book31.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">New</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>Inside story<br><b>$19.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img src="img/book32.jpg" alt="">
+                        <p>Red Comet<br><b>$20.50</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img src="img/book26.jpg" alt="">
+                        <p>The nickel boys <br><b>$20.50</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-display-container">
+                            <img src="img/book27.jpg" alt="">
+                            <span class="w3-tag w3-display-topleft">Sale</span>
+                            <div class="w3-display-middle w3-display-hover">
+                                <button onclick="window.location.href='index2.html';" class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <p>A visit from the Goon Squad<br><b class="w3-text-red">$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 s6">
+                    <div class="w3-container">
+                        <img class="heightinc" src="img/book28.jpg" alt="">
+                        <p>Doxology<br><b>$14.99</b></p>
+                    </div>
+                    <div class="w3-container">
+                        <img class="heightinc" alt="" src="img/book29.jpg">
+                        <p>The man who saw everything<br><b>$24.99</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--this is the part where you choose the page number -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!--the function opens the tabs by the class name and will display the chosen class name-->
+        <script>
+            function openBooks(cityName) {
+                var i;
+                var x = document.getElementsByClassName("booked");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(cityName).style.display = "block";
+            }
+        </script>
+        <script>
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+        <!--this is the function that opens the menu or nav bar
+               consists of two function one to open it and one to close it   -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+
+    </div>
+    <!--the menu lists all the books cataogries it opens and closes by function opennav -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href=""> </a>
+        <a href="#"> </a>
+        <a href="index1.html">Fantasy Books </a>
+        <a href="index1.html">Design Books</a>
+        <a href="#">Romance Books</a>
+        <a href="#">Horror Books</a>
+        <a href="#">Adventure Books </a>
+        <a href="#">Crime Books</a>
+
+        <a href="#"> </a>
+        <a href="#"> </a>
+        <a href="#about">About Us </a>
+    </div>
+
+    <div class="w3-container w3-black w3-padding-32">
+        <h1>Subscribe</h1>
+        <h6>To get special offers and VIP treatment:</h6>
+        <p><input class="w3-input w3-border" type="text" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" placeholder="Enter e-mail" style="width:100%"></p>
+        <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    </div>
+
+    <!--appears on bottom of page 
+  its the footer that has site info   -->
+    <footer>
+        <div class="w3-col s4">
+            <h2 id="about"> <img src="img/aboutus.png" alt=""> About Us</h2>
+            <h6><a href="#">We're hiring</a></h6>
+            <h6><a href="#">Support</a></h6>
+            <h6><a href="#">Find store</a></h6>
+            <h6><a href="#">Shipment</a></h6>
+            <h6><a href="#">Payment</a></h6>
+            <h6><a href="#">Gift card</a></h6>
+            <h6><a href="#">Return Up </a></h6>
+            <h6><a href="#">Help</a></h6>
+        </div>
+        <div>
+            <!--  <div class="lefttext">
+                <img  src="img/libraryicon2.png" alt=""> <h2>Store</h2>  </div> -->
+            <h2><img src="img/libraryicon2.png" alt="">Store</h2>
+            <h6> Treasure BookStore</h6>
+            <h6> 0462211455</h6>
+            <h6> TreasureBS@gmail.com</h6>
+            <h2><img src="img/creditcard.png" alt="">We accept</h2>
+            <h6>Amex</h6>
+            <h6>Master card</h6>
+        </div>
+        <br>
+        <h5>Treasure, Co. Losafa - 2020 &copy;</h5>
+
+    </footer>
+
+</body>
+
+</html>
