@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- the title that appears on page tab
+    followed by the links connceted to this page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/javaScript.js"></script>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <!-- this is showed on top of page the logos search,books,and the
+    shopping cart logo and the header  -->
+    <a href="index2.html"><img class="icon" src="img/carticon.jpg" alt="" /> </a>
+    <img src="img/searchicon.png" class="search" alt="search icon">
+    <img class="logo" src="img/logo.png" alt="logo for Treasure BookStore">
+    <header>
+        <h2>Treasure BookStore </h2>
+    </header>
+
+    <div>
+        <nav>
+            <div id="main">
+
+                <!--this is tab it will choose what catagory the user wants
+                     the chosen catagory will be chosen by class and function-->
+
+                <div class="black">
+                    <button class="righty openbtn" onclick="openNav()"> ☰ </button>
+                    <button onclick="window.location.href='index.html';" class="pink">   |Home   </button>
+                    <button onclick="window.location.href='index1.html';" class="pink"> |Books   </button>
+                    <button onclick="window.location.href='index3.html';" class="pink">|Sign up </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="include">
+        <h1>CONTACT US &nbsp;</h1>
+        <hr>
+        <h3>Fill out the form below to learn more!</h3>
+    </div>
+    <div>
+
+        <!--   feedback FORM includes fields as: name, email address, subject, list of topics (e.g. Suggestion, Complaint, Idea, Help, …etc.) in a menu selection as well as a textarea field for the message itself. The form’s submit event should be handled with a javascript function handler that validate the form input
+        Check that the name field is not empty. Check that the email address field is not empty and that the email address follows the correct email format. Hint: Make use of regular expressions. Check that message input field is not empty - After these tests and if there are no errors, the form data is submitted successfully to the server as expected.
+        If there are any error in the user’s input data, display an error section that dynamically describes the exact error(s) (in red) and make sure that the form data is then not submitted to the server in this case. -->
+
+        <form class="backwhite" name="myForm" action="#">
+            <br>
+            <label> First name *: <input type="text" id="fname" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg3();blurFunction(this)" name="fname"   size="12" maxlength="12" required placeholder="Your first name"/> </label>
+            <p id="demo3"></p>
+            <label>  last name *: <input type="text" id="lname"  onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg2();blurFunction(this)" name="lname"   size="12" maxlength="12" required placeholder="Your last name"/>
+            </label>
+            <p id="demo2"></p>
+
+            <label> Email *: <input type="text" id="email"  onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg1();validateForm();blurFunction(this)" name="email"   size="12" maxlength="26" required placeholder="****@***.***"/>
+                </label>
+            <p id="demo1"></p>
+
+            <h6>Type of Message:</h6>
+            <select name="select" id="select" size="1">
+              
+              <option value="idea">idea</option>
+              <option value="">suggestion</option>
+              <option value="">complaint</option>
+              <option value="">help</option>
+
+              </select>
+            <hr> Message *:
+            <br>
+            <textarea id="textarea" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg();blurFunction(this)" name="textarea" rows="6" cols="60"></textarea>
+            <p id="demo"></p>
+
+            <input onclick="return check()" type="submit" value="Submit" />
+            <br>
+            <br>
+
+        </form>
+    </div>
+
+    
+        <!--this the menu option that appears on side of page when 
+        its needed note:it opens when clicking on the sign   -->
+
+              <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="#"> </a>
+                <a href="#"> </a>
+                <a href="index1.html">Fantasy Books </a>
+                <a href="#">Design Books</a>
+                <a href="#">Romance Books</a>
+                <a href="#">Horror Books</a>
+                <a href="#">Adventure Books </a>
+                <a href="#">Crime Books</a>
+
+                <a href="#"> </a>
+                <a href="#"> </a>
+                <a href="#about">About Us </a>
+            </div>
+
+
+    <!-- Check that message input field is not empty - After these tests and if there are no errors,
+         the form data is submitted successfully to the server as expected. -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+    <footer class="feedfooter">
+
+        <br>
+        <h5>Treasure, Co. Losafa - 2020 &copy;</h5>
+
+    </footer>
+</body>
+
+</html>
