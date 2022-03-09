@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- the title that appears on page tab
+    followed by the links connceted to this page -->
+    <title>Treasure Book Store</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/javaScript.js"></script>
+</head>
+
+<body>
+    <!--the top navigation the user can choose from done by a list -->
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="img/logo.png" alt="Logo for Treasure BookStore">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <!--this is the body text its the center of page -->
+        <div class="center">
+            <h1>Welcome To<br> Treasure Book Store</h1>
+            <h4>"Today's reader is tomorrow's leader"</h4>
+            <div class="buttons">
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+                <a href="index3.html"> <button>Sign Up</button></a>
+                <a href="index1.html"><button class="btn2" style="margin-left:80px;">SHOP NOW</button></a>
+            </div>
+        </div>
+
+        <!-- login form section to the website’s home page
+            . The login section would ask the user to enter his user name in a text box widget, 
+            his password in a password widget, a ”remember me” checkbox and a ”login” button. The form’s submit event should
+             be handled with a javascript function handler that validate the form input as following: - Check that the user name field 
+             is not empty - Check that the password field is not empty - 
+             If both the user name and password are not empty, the form data is submitted successfully to the server as expected. -
+              If either the user name or password is empty, display an error section that dynamically describes the exact error(s) 
+              (in red) and make sure that the form data is then not submitted to the server. -->
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" name="myForm" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img/avatar2.jpg" alt="Avatar" id="avatarlog" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="uname" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg33();blurFunction(this)" type="text" placeholder="Enter Username" name="uname" required>
+                    <p id="demouser"></p>
+                    <label for="psw"><b>Password</b></label>
+                    <input id="psw" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);;redmsg333();blurFunction(this)" type="password" placeholder="Enter Password" name="psw" required>
+                    <p id="demopas"></p>
+                    <button onclick="return checkLogin()" type="submit">Login</button>
+                    <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+
+        <footer>
+            <p>Treasure, Co. Losafa - 2020 &copy;</p>
+        </footer>
+    </div>
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

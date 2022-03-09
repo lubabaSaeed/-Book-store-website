@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- the title that appears on page tab
+    followed by the links connceted to this page -->
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src="/javaScript.js"></script>
+
+
+</head>
+<!--the top part of page where we put the logos and the name of store-->
+
+<body>
+    <a href="index2.html"><img class="icon" src="img/carticon.jpg" alt=""/> </a>
+    <img src="img/searchicon.png" class="search" alt="search icon">
+    <img class="logo" src="img/logo.png" alt="logo for Treasure BookStore">
+
+
+    <header>
+        <h2>Treasure BookStore </h2>
+    </header>
+    <div>
+        <nav>
+            <!--the nav is here it will choose based on each button and it
+                 has refrence to html pages that it will lead to -->
+            <div id="main">
+
+                <div class="black">
+                    <button class="righty openbtn" onclick="openNav()"> ☰ </button>
+                    <button onclick="window.location.href='index.html';" class="pink">   |Home   </button>
+                    <button onclick="window.location.href='index1.html';" class="pink"> |Books   </button>
+                    <button onclick="window.location.href='#about';" class="pink">|About Us</button>
+
+                </div>
+            </div>
+        </nav>
+        <div id="BS" class="w3-container booked">
+            <h1> &nbsp; &nbsp; </h1>
+
+            <!--this is the pasrt the the user will put input of his info
+            he can sign up with a new accound or sign in with 3 options giving -->
+
+            <form  name="myForm" action="index1.html">
+                <div id="login-box">
+                    <div class="left">
+                        <h1>Sign up</h1>
+
+                        <input id="myInput" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" type="text" name="username" placeholder="Username" /> <p id="usernamedemo"></p>
+                        <input type="text" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" name="email" placeholder="E-mail" /> <p id="emaildemo"></p>
+                        <input type="password" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" name="password" placeholder="Password" /> <p id="passdemo"></p>
+                        <input type="password" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" name="password2" placeholder="Retype password" /> <p id="pass2demo"></p>
+
+                        <input type="submit" onclick="return checkindex3()" name="signup_submit" value="Sign up" />
+                    </div>
+         
+
+                    <div class="right">
+                        <span class="loginwith">Sign in with<br />social network</span>
+                        
+                       <button  class="social-signin facebook "> <a href="https://www.facebook.com/" class="translink"> Log in with facebook </a> </button>   
+                        <button  class="social-signin twitter "> <a href="https://www.twitter.com/" class="translink"> Log in with Twitter </a> </button>   
+                        <button  class="social-signin google "> <a href="https://google-rewritten.mn.co/" class="translink"> Log in with Google+ </a> </button>   
+                    </div>
+                    <div class="or">OR</div>
+                </div>
+                <hr>
+                <h6>Total <span class="price" style="color:black"><b>$30</b></span></h6>
+            </form>
+        </div>
+     
+    </div>
+
+      <!--this is the function that opens the menu or nav bar
+    consists of two function one to open it and one to close it   -->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+     <!--this the menu option that appears on side of page when 
+        its needed note:it opens when clicking on the sign   -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="#"> </a>
+        <a href="#"> </a>
+        <a href="index1.html">Fantasy Books </a>
+        <a href="#">Design Books</a>
+        <a href="#">Romance Books</a>
+        <a href="#">Horror Books</a>
+        <a href="#">Adventure Books </a>
+        <a href="#">Crime Books</a>
+
+        <a href="#"> </a>
+        <a href="#"> </a>
+        <a href="#about">About Us </a>
+    </div>
+
+    <div class="w3-container w3-black w3-padding-32">
+        <h1>Subscribe</h1>
+        <h6>To get special offers and VIP treatment:</h6>
+        <p><input class="w3-input w3-border" type="text" onfocus="myFunction2(this);myFunction1(this)" onblur="blurFunction1(this);blurFunction(this)" placeholder="Enter e-mail" style="width:100%"></p>
+        <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    </div>
+
+     <!--appears on bottom of page 
+  its the footer that has site info   -->
+    <footer>
+        <div class="w3-col s4">
+            <h2 id="about"> <img src="img/aboutus.png" alt=""> About Us</h2>
+            <h6><a href="#">We're hiring</a></h6>
+            <h6><a href="#">Support</a></h6>
+            <h6><a href="#">Find store</a></h6>
+            <h6><a href="#">Shipment</a></h6>
+            <h6><a href="#">Payment</a></h6>
+            <h6><a href="#">Gift card</a></h6>
+            <h6><a href="#">Return Up </a></h6>
+            <h6><a href="#">Help</a></h6>
+        </div>
+        
+            <h2><img src="img/libraryicon2.png" alt="">Store</h2>
+            <h6> Treasure BookStore</h6>
+            <h6> 0462211455</h6>
+            <h6> TreasureBS@gmail.com</h6>
+            <h2><img src="img/creditcard.png" alt="">We accept</h2>
+            <h6>Amex</h6>
+            <h6> Master card </h6>
+        
+        <br>
+        <h5>Treasure, Co. Losafa - 2020 &copy;</h5>
+
+    </footer>
+
+    </body>
+
+</html>
